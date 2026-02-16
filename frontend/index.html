@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MarketMind AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 🔥 Animated Background -->
+<div class="background"></div>
+
+<!-- 🔐 Registration Section -->
+<div id="login-section" class="center-container">
+    <div class="glass-card">
+        <h1>MarketMind AI</h1>
+        <p>AI-Powered Business Intelligence Platform</p>
+
+        <input type="email" id="email" placeholder="Email ID">
+        <input type="password" id="password" placeholder="Password (min 8 characters)">
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+        <button onclick="register()">Get Started</button>
+    </div>
+</div>
+
+<!-- 📊 Dashboard Section -->
+<div id="dashboard-section" style="display:none;">
+    <div class="sidebar">
+        <h2>MarketMind AI</h2>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="main">
+        <h1>AI Business Feasibility Analyzer</h1>
+
+        <div class="glass-card">
+
+            <input id="business" placeholder="Business Type (e.g., Biryani Center, Salon, Grocery Store)">
+            
+            <input id="location" placeholder="Target Location (City / Area)">
+            
+            <input id="budget" placeholder="Total Investment Budget (₹)">
+            
+            <input id="target" placeholder="Target Customer Segment (e.g., Students, Families)">
+            
+            <input id="price" placeholder="Expected Price per Unit / Service (₹)">
+
+            <button onclick="analyze()">Run AI Feasibility Analysis</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="result" class="glass-card" style="display:none;">
+            <h3>AI Market Feasibility Report</h3>
+            <div id="analysis-output"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
