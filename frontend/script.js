@@ -67,7 +67,7 @@ function analyze() {
     `;
 
     // 🔥 Backend API Call
-    fetch("http://127.0.0.1:5000/analyze", {
+    fetch("https://marketmind-2-0.onrender.com", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
